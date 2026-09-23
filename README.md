@@ -127,3 +127,7 @@ The board uses GitHub's unauthenticated REST API for public repository issues. G
 A simple lab policy that matches this tool:
 
 > The workstation is a shared resource. Please book only the time you reasonably expect to need. If your computation finishes early, close your booking so others can see that the resource is free. Short interactive experiments do not need to consume the whole day, and unusually long or multi-GPU runs should be coordinated with the group first.
+
+## Acknowledgment
+
+This tool has been created using ChatGPT with GPT 5.6 Sol. I don't claim any authorship on the entire repository.
