@@ -1,0 +1,62 @@
+name: GPU booking
+description: Reserve time on the shared GPU workstation.
+title: "[GPU BOOKING] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Shared workstation booking
+        Please keep the booking as short as reasonably possible. If you finish early, close this issue so the board becomes free for the next person.
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      description: Resource selected on the booking board.
+      placeholder: GPU 0
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-09-23"
+    validations:
+      required: true
+
+  - type: input
+    id: start
+    attributes:
+      label: Start time
+      description: Local workstation time, 24-hour format.
+      placeholder: "09:00"
+    validations:
+      required: true
+
+  - type: input
+    id: end
+    attributes:
+      label: End time
+      description: Local workstation time, 24-hour format.
+      placeholder: "12:00"
+    validations:
+      required: true
+
+  - type: input
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Keep this brief but useful to other students.
+      placeholder: "Thesis model training / benchmark / debugging"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Shared-resource agreement
+      options:
+        - label: I understand this is a shared resource and I will close the issue if I finish early.
+          required: true
