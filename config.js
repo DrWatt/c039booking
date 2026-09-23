@@ -1,18 +1,18 @@
 window.GPU_BOOKING_CONFIG = {
   // If left as placeholders, the site tries to infer these from <owner>.github.io/<repo>/.
-  githubOwner: "YOUR_GITHUB_USERNAME_OR_ORG",
-  githubRepo: "gpu-booking",
+  githubOwner: "DrWatt",
+  githubRepo: "c039booking",
 
   machineName: "Shared GPU Workstation",
   timeZone: "Europe/Rome",
 
   // Rename/add/remove GPUs to match the workstation.
-  gpus: ["GPU 0", "GPU 1", "GPU 2", "GPU 3"],
+  gpus: ["GPU 0", "GPU 1"],
 
   // Calendar settings.
-  startHour: 8,
-  endHour: 22,
-  slotMinutes: 60,
+  startHour: 0,
+  endHour: 24,
+  slotMinutes: 30,
   daysShown: 7,
   weekStartsOn: 1, // Monday
   maxBookingHours: 8,
